@@ -1,0 +1,15 @@
+conda activate py38cu102
+
+roscore
+
+cd tools
+python test_ros.py --pt ../pt/livox_model_2.pt
+
+rosbag play [bag path]
+
+rviz -d rviz.rviz
+
+
+
+
+
